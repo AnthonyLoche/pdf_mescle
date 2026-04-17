@@ -282,6 +282,11 @@ async function mergePdfs() {
 
 .action-btn {
   flex: 1;
+  min-height: 46px;
+}
+
+.action-btn :deep(.v-btn__content) {
+  font-weight: 700;
 }
 
 @media (max-width: 600px) {
@@ -302,6 +307,16 @@ async function mergePdfs() {
 
   .actions-wrap {
     flex-direction: column;
+  }
+
+  .action-btn {
+    min-height: 56px;
+    border-radius: 14px !important;
+  }
+
+  .action-btn :deep(.v-btn__content) {
+    font-size: 0.98rem;
+    letter-spacing: 0.2px;
   }
 }
 </style>
